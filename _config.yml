@@ -2,9 +2,9 @@
 title: fiddle.scot
 subtitle:
 email: tim@tsmacdonald.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "fiddle.scot" # the base hostname & protocol for your site
+description:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fiddle.scot" # the base hostname & protocol for your site
 author: "Tim Macdonald"
 street_address:
 city:

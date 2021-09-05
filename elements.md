@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Elements
-image: assets/images/pic01.jpg
+title: Home
+image: assets/images/highland-wedding.jpg
+show_tile: false
 nav-menu: true
 ---
 
