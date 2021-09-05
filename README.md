@@ -2,29 +2,29 @@
 
 A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
 
-![Forty Theme](images/forty.jpg "Forty Theme")
+![Forty Theme](assets/images/forty.jpg "Forty Theme")
 
 # How to Use
 
-For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details, 
+For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
 or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
 and [creating pages](https://jekyllrb.com/docs/pages/).
 
 - **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
+- **GitHub**:
+1. Fork this repository.
+2. Set up a Personal Access Token ([instructions](https://jekyllrb.com/docs/continuous-integration/github-actions/#providing-permissions)) named `JEKYLL_PAT`.
+3. The GitHub Actions workflow should have run when you forked the repo. This initial run will fail because of the missing `JEKYLL_PAT` secret not being set. Got to the workflow run and click "re-run all workflows". This time it should succeed.
+4. Start editing the `_config.yml` file!
+
+> NOTE: GitHub Actions is required to deploy to GitHub Pages because GitHub [refuses to update their version of Jekyll](https://github.com/github/pages-gem/issues/651).
 
 # Added Features
 
-* [Formspree.io](https://formspree.io/) **contact form integration** - just add your email to the `_config.yml` and it works!
-* Add your **social profiles** easily in `_config.yml`.
-* **Automatic sitemap generation** via the [Jekyll Sitemap Generator](https://github.com/jekyll/jekyll-sitemap) plugin.
-* **Automatic SEO** via the [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) plugin.
-* **Coming soon**: Only social profiles buttons you enter in `config.yml` show up on the site footer.
-* **Coming soon**: Featured images and thumbnails in front matter for the homepage posts grid.
-* **Coming soon**: Easily configure the navigation menu properties from `_config.yml`.
-* **Coming soon**: Use `_config.yml` to set whether the homepage tiles should pull pages or posts.
-* **Coming soon**: Automatic RSS/Atom feed generation.
-* **Coming soon**: Automatic asset optimization using the [Jekyll Assets](https://github.com/jekyll/jekyll-assets) plugin.
+* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
+* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
+* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* Set **featured images** in front matter.
 
 # Credits
 

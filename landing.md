@@ -1,24 +1,10 @@
 ---
-layout: landing
 title: Landing
+layout: landing
+description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+image: assets/images/pic07.jpg
+nav-menu: true
 ---
-
-<!-- Banner -->
-<!-- Note: The "styleN" class below should match that of the header element. -->
-<section id="banner" class="style2">
-	<div class="inner">
-		<span class="image">
-			<img src="images/pic07.jpg" alt="" />
-		</span>
-		<header class="major">
-			<h1>Landing</h1>
-		</header>
-		<div class="content">
-			<p>Lorem ipsum dolor sit amet nullam consequat<br />
-			sed veroeros. tempus adipiscing nulla.</p>
-		</div>
-	</div>
-</section>
 
 <!-- Main -->
 <div id="main">
@@ -37,7 +23,7 @@ title: Landing
 <section id="two" class="spotlights">
 	<section>
 		<a href="generic.html" class="image">
-			<img src="images/pic08.jpg" alt="" data-position="center center" />
+			<img src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -53,7 +39,7 @@ title: Landing
 	</section>
 	<section>
 		<a href="generic.html" class="image">
-			<img src="images/pic09.jpg" alt="" data-position="top center" />
+			<img src="{% link assets/images/pic09.jpg %}" alt="" data-position="top center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -69,7 +55,7 @@ title: Landing
 	</section>
 	<section>
 		<a href="generic.html" class="image">
-			<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+			<img src="{% link assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
 			<div class="inner">

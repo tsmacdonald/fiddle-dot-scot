@@ -26,23 +26,37 @@
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
 					<h3>Email</h3>
-					<a href="#">{{ site.email }}</a>
+					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-phone"></span>
 					<h3>Phone</h3>
-					<span>{{ site.phone }}</span>
+					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-home"></span>
 					<h3>Address</h3>
-					<span>{{ site.street_address }}<br />
-					{{ site.city }}, {{ site.state }} {{ site.zip_code }}<br />
-					{{ site.country }}</span>
+					<span>
+					{% if site.street_address %}
+					    {{ site.street_address }}<br />
+					{% endif %}
+					{% if site.city %}
+					    {{ site.city }},
+					{% endif %}
+					{% if site.state %}
+					    {{ site.state }} 
+					{% endif %}
+					{% if site.zip_code %}
+					    {{ site.zip_code }}<br />
+					{% endif %}
+					{% if site.country %}
+					    {{ site.country }}
+					{% endif %}
+					</span>
 				</div>
 			</section>
 		</section>
@@ -53,17 +67,21 @@
 	<footer id="footer">
 		<div class="inner">
 			<ul class="icons">
-				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				<li><a href="{{ site.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
-				<li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-				<li><a href="{{ site.gitlab_url }}" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-				<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				{% for key_value in site.socials %}
+					{% if key_value[1] %}
+						<li>
+							<a href="{{ key_value[1] }}" class="icon alt fa-{{ key_value[0] | downcase }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
+								<span class="label">{{ key_value[0] }}</span>
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
 			</ul>
 			<ul class="copyright">
-				<li>&copy; {{ site.title-bold }} {{ site.title-normal }}</li>
+				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
 				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
 				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-				
+
 			</ul>
 		</div>
 	</footer>
@@ -71,10 +89,10 @@
 </div>
 
 <!-- Scripts -->
-	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery.scrolly.min.js"></script>
-	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery.scrollex.min.js"></script>
-	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/skel.min.js"></script>
-	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="{{ site.url }}{{ site.baseurl }}/assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
+	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
+	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
