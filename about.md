@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-image: assets/images/pic11.jpg
+image: assets/images/about.jpg
 permalink: /about/
 nav-menu: true
 ---
