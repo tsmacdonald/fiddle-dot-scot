@@ -20,14 +20,14 @@
                 <header class="major">
                   <h1>{{ post.title }}</h1>
                 </header>
+                {% if post.image %}
+                  <span class="image left"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>
+                {% endif %}
+                {% if post.date %}
+                  <p>{{ post.date | date_to_string }}</p>
+                {% endif %}
+                <p>{{ post.description}}</p>
               </a>
-              {% if post.image %}
-                <span class="image left"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>
-              {% endif %}
-              {% if post.date %}
-                <p>{{ post.date }}</p>
-              {% endif %}
-              <p>{{ post.description}}</p>
             {% endif %}
           {% endfor %}
       	</div>
