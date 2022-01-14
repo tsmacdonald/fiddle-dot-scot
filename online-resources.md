@@ -18,8 +18,13 @@ nav-menu: true
 * [**Tobar an Dualchais / Kist o Riches**](https://www.tobarandualchais.co.uk/): Online access to part of the University
   of Edinburgh's School of Scottish Studies Archives.
 
-* [**Glen Collection of Printed Music**](https://digital.nls.uk/special-collections-of-printed-music/archive/87729635)
+* [**rareTunes**](https://raretunes.org/): In its own words, "A curated audio scrapbook of recordings that range from
+  near-studio quality to crowded and noisy house sessions, from digital media to old bits of tape, vinyl and obscure
+  78s." Also includes much supplemental information about Scottish music and musicians, especially in the past 150
+  years.
+
+* [**Glen Collection of Printed Music**](https://digital.nls.uk/special-collections-of-printed-music/archive/87729635):
   Partially digitized archive of the National Library of Scotland's Glen Collection.
 
-* [**IMSLP**](https://imslp.org/wiki/Category:Folk_Songs,_Scottish/Collections) The Wild West of sheet music facsimiles,
+* [**IMSLP**](https://imslp.org/wiki/Category:Folk_Songs,_Scottish/Collections): The Wild West of sheet music facsimiles,
   but includes many books of fiddle tunes. They are not always well categorized or easy to find.
