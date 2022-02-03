@@ -13,6 +13,5 @@ This site hopes to be two things:
 
 2. A research blog for Scottish fiddle scholars.
 
-It is maintained (and most of the content is by) [Tim Macdonald](http://www.tsmacdonald.com), a fiddler and a master's
-student at the University of Edinburgh researching historic performance practice in Edinburgh at the end of the long 18th
-century.
+It is maintained (and mostly authored) by [Tim Macdonald](http://www.tsmacdonald.com), a fiddler and a research
+student at the University of Edinburgh.
