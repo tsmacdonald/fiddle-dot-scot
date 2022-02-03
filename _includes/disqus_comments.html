@@ -10,7 +10,8 @@
     defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
     serverName: "cactus.chat",
     siteName: "{{ site.disqus.shortname }}",
-    commentSectionId: "{{ page.shortcode }}"
+    commentSectionId: "{{ page.shortcode }}" // Can't use URL because of:
+    // https://gitlab.com/cactus-comments/cactus-client/-/issues/62
   })
   </script>
   <noscript>Please enable Javascript to view the <a href="https://cactus.chat" rel="nofollow">comments powered by matrix.org.</a></noscript>
