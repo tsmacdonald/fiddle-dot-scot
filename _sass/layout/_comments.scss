@@ -1,0 +1,23 @@
+@media (min-width: 900px) {
+  .cactus-editor {
+    align-items: flex-start;
+    textarea {
+      margin: 0 1em;
+      width: 900px;
+      max-width: 900px;
+    }
+    .cactus-editor-name {
+      margin: 0 1em;
+      flex: 1;//0 1 auto;
+      input {
+
+      }
+    }
+  }
+}
+
+.cactus-editor {
+  .cactus-login-button {
+    display: none;
+  }
+}

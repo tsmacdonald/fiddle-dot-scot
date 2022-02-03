@@ -1,0 +1,18 @@
+<!-- This is actually cactus.chat, not Disqus. We're just hijacking Jekyll's existing infrastructure for Disqus -->
+
+{% if page.comments %}
+
+  <h2>Comments</h2>
+  <div id="comment-section"></div>
+  <script>
+  initComments({
+    node: document.getElementById("comment-section"),
+    defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+    serverName: "cactus.chat",
+    siteName: "{{ site.disqus.shortname }}",
+    commentSectionId: "{{ page.url }}"
+  })
+  </script>
+  <noscript>Please enable Javascript to view the <a href="https://cactus.chat" rel="nofollow">comments powered by matrix.org.</a></noscript>
+
+{% endif %}

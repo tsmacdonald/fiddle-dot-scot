@@ -31,6 +31,17 @@ socials:
   Facebook:
   Slack:
 
+disqus: # Actually cactus.chat
+  shortname: fiddle.scot
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+
 # build settings
 markdown: kramdown
 
