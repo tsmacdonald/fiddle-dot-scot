@@ -63,4 +63,17 @@ img {
 				margin: (_size(element-margin) * 0.75) 0;
 			}
 		}
-	}
+
+    figcaption {
+      font-size: 75%;
+    }
+  }
+
+.image-row {
+  display: flex;
+
+  .half-image {
+    flex: 50%;
+    padding: 5px;
+  }
+}
