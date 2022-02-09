@@ -3,6 +3,7 @@ layout: post
 title: Strathspey Performance
 description: How were strathspeys first played?
 image: assets/images/stumpie-bowing.png
+shortcode: strathspeys
 ---
 
 [Here's a link](http://tsmacdonald.com/assets/docs/macdonald-strathspeys-reels-strathspey-reels.pdf) to
