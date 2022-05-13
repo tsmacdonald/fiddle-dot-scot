@@ -6,7 +6,7 @@ image: assets/images/elphinston.png
 shortcode: foreign-sonnets
 ---
 
-[Here's a link](http://tsmacdonald.com/assets/foreign-sonnets.pdf) to a paper I
+[Here's a link](/assets/foreign-sonnets.pdf) to a paper I
 wrote last December as part of my master's degree. For several years I've been
 perplexed by the way 18th-century Scottish musicians handled trying to sound
 Scottish, British, or European and my eventual epiphany came when I realised
