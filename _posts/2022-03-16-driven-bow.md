@@ -3,7 +3,6 @@ layout: post
 title: The Driven Bow?
 description: Scattered Thoughts on Niel Gow's Up-Bow
 image: assets/images/peculiar-method.png
-shortcode: driven-bow
 ---
 
 Perhaps the first thing I learned in my first ever Scottish fiddle lesson was

@@ -1,11 +1,8 @@
 ---
 layout: page
 title: About
-image: assets/images/about.jpg
 permalink: /about/
-nav-menu: true
 ---
-# About
 
 This site hopes to be two things:
 

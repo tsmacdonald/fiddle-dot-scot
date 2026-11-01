@@ -1,0 +1,4 @@
+{%- comment -%} ponytail: prefer the post's `description` front matter over the auto-excerpt {%- endcomment -%}
+<span class="post-link__excerpt">
+  {{ post.description | default: post.excerpt | strip_html | truncatewords: 20, '…' }}
+</span>

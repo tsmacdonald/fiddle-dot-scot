@@ -3,9 +3,7 @@ layout: page
 title: Other Online Resources
 image: assets/images/bremner-treatise.jpg
 permalink: /online-resources/
-nav-menu: true
 ---
-# Other Online Resources
 
 * [**HMS.scot**](https://hms.scot/): Database of many major 18th-century printed tune collections, including the most
   up-to-date notes on the people involved. Includes some digitised collections. Also includes Aaron McGregor's very

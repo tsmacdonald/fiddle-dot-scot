@@ -1,0 +1,29 @@
+{%- comment -%}
+  Comments are a Google Form feeding a Google Sheet. Approved rows are published (CSV)
+  and rendered by assets/js/comments.js. Without JavaScript the form still posts to Google.
+{%- endcomment -%}
+<section id="comments" class="comments"
+         data-csv="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSLF5PAccREsQ23vhDnhWvcaJDMKxFDH6oVB6llR3LSTJ89YoJtMHuLeKYb_apiYbnzDlrfzDyaZTJ/pub?gid=2070403445&single=true&output=csv"
+         data-post="{{ page.url }}">
+  <h2 class="divided">Comments</h2>
+
+  <ol class="comment-list"></ol>
+
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSfhdKCfS8GZP1hhM908nFzA1YKd9xqIUMi9DCcFBWp9ngzKiA/formResponse" method="POST">
+    <input type="hidden" name="entry.1738199247" value="{{ page.url }}" />
+
+    <label for="comment-name">Name</label>
+    <input type="text" name="entry.159562113" id="comment-name" autocomplete="name" required />
+
+    <label for="comment-email">Email <small>(never shown)</small></label>
+    <input type="email" name="entry.1111528009" id="comment-email" autocomplete="email" required />
+
+    <label for="comment-body">Comment</label>
+    <textarea name="entry.104461877" id="comment-body" rows="5" required></textarea>
+
+    <p class="comment-note">Comments are moderated and appear once approved.</p>
+    <button type="submit" class="btn btn-bordered">Post Comment</button>
+    <p class="comment-status" role="status"></p>
+  </form>
+</section>
+<script src="{{ '/assets/js/comments.js' | relative_url }}" defer></script>

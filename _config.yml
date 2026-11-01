@@ -1,55 +1,29 @@
 # site settings
 title: fiddle.scot
-subtitle:
 email: tim@tsmacdonald.com
-description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fiddle.scot" # the base hostname & protocol for your site
 author: "Tim Macdonald"
-street_address:
-city:
-state:
-zip_code:
-country:
-phone:
+formspree: xwkykgll
+goatcounter: fiddle-scot
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+theme: hitchens-theme
 
-# social settings (key must match name of font awesome icon)
-# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
-# Icons are not shown if value is empty
-# You need to restart jekyll for changes to have an effect
-socials:
-  GitHub:
-  GitLab:
-  Google-Plus:
-  Instagram:
-  LinkedIn:
-  Twitter:
-  Facebook:
-  Slack:
+plugins:
+  - jekyll-paginate
 
-disqus: # Actually cactus.chat
-  shortname: fiddle.scot
+# The blog's table of contents lives at /blog/ (blog/index.html)
+paginate: 10
+paginate_path: "/blog/page:num/"
+show_excerpts: true
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true
-
-# build settings
 markdown: kramdown
 
 sass:
   style: compressed
 
 exclude:
-- "*.gemspec"
 - LICENSE.md
-- CONTRIBUTING.md
 - README.md
+- mise.toml
+- .gitlab-ci.yml

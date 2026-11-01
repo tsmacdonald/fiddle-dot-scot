@@ -1,35 +1,40 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-{% include head.html %}
+{% if site.data.menu %}
+  {% include menu.html %}
+{% else %}
+  {% include back-link.html %}
+{% endif %}
 
-<body>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
 
-    {% include header.html %}
+  {% if page.title != "" %}
+    <h1 class="post-title divided p-name" itemprop="name headline">
+      {{ page.title }}
+    </h1>
+  {% endif %}
 
+  {% if page.image %}
+    <img class="post-image" src="{{ page.image | relative_url }}" alt="" />
+  {% endif %}
 
-<!-- Main -->
-<div id="main" class="alt">
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-      <em>{{ page.date | date_to_string }}</em>
-		</header>
-		{% if page.image %}
-      <span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>
-    {% endif %}
-		{{ content }}
-	</div>
-</section>
+  {% if page.date %}
+    <div class="post-meta">
+      {% if page.author %}
+        <div itemprop="author">{{ page.author }}</div>
+      {% endif %}
+      <time class="post-date dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+  {% endif %}
 
-</div>
+  {% if page.collection == "posts" %}
+    {% include comments.html %}
+  {% endif %}
 
-    {% include disqus_comments.html %}
-    {% include footer.html %}
-
-</body>
-
-</html>
+</article>

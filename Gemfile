@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.2'
+gem 'hitchens-theme', '~> 0.8'
 
 group :jekyll_plugins do
-  gem 'jekyll-timeago', '~> 0.13.1'
+  gem 'jekyll-paginate', '~> 1.1'
 end
