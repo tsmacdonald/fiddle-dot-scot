@@ -19,7 +19,7 @@ layout: default
   <img class="landing-hero" src="{{ '/assets/images/hero.jpg' | relative_url }}"
        alt="A fiddle and bow resting on 18th-century printed music" />
 
-  <section class="home">
+  <section class="home sheet">
     <h1 class="content-title divided">Contents</h1>
     <ul class="post-list">
       {% for post in site.posts limit: site.paginate %}
@@ -31,7 +31,7 @@ layout: default
     {% endif %}
   </section>
 
-  <section class="contact">
+  <section class="contact sheet">
     <h1 class="content-title divided">Get in Touch</h1>
     <form action="https://formspree.io/f/{{ site.formspree }}" method="POST">
       <label for="name">Name</label>

@@ -170,3 +170,16 @@ body,
   font-style: italic;
   text-indent: 0;
 }
+
+// Boxes (homepage contents and contact form, /blog/ contents) sit on a sheet like .post: lighter, unlined, same shadow.
+.sheet {
+  background: $paper-light;
+  box-shadow: 12px 18px 24px hsla(41.5, 50%, 39.8%, .1);
+  box-sizing: border-box;
+  max-width: 36rem;
+  margin: 3em auto;
+  padding: 2em 1.5em 3em;
+  @media (min-width: $on-tablet) {
+    padding: 2em 3em 3em;
+  }
+}

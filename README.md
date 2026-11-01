@@ -18,5 +18,5 @@ bundle exec jekyll serve
 - `_includes/comments.html`, `assets/js/comments.js`: comments via a Google Form; approved rows (ticked in the sheet) are published as CSV and rendered client-side
 - `_includes/post-excerpt.html`: uses `description:` front matter in the table of contents
 - `_sass/_variables.scss`, `_sass/_fiddle.scss`: paper colours, laid-paper texture, homepage and contact form
-- `_layouts/home.html`: drops the masthead subheading
+- `_layouts/home.html`: drops the masthead subheading; puts the contents on a `.sheet`
 - `index.html`: homepage; the paginated table of contents is `blog/index.html`
