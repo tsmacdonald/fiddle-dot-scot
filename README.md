@@ -19,4 +19,9 @@ bundle exec jekyll serve
 - `_includes/post-excerpt.html`: uses `description:` front matter in the table of contents
 - `_sass/_variables.scss`, `_sass/_fiddle.scss`: paper colours, laid-paper texture, homepage and contact form
 - `_layouts/home.html`: drops the masthead subheading; puts the contents on a `.sheet`
-- `index.html`: homepage; the paginated table of contents is `blog/index.html`
+- `pages/index.html`: homepage; the paginated table of contents is `blog/index.html` (jekyll-paginate needs it at that path)
+
+## Pages
+
+Standalone pages live in `pages/`. Each needs a `permalink:` in its front matter (e.g. `permalink: /about/`),
+otherwise Jekyll publishes it under `/pages/…`. To add one to the navigation, add it to `_data/menu.yml`.

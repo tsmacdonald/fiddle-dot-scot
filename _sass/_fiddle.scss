@@ -183,3 +183,10 @@ body,
     padding: 2em 3em 3em;
   }
 }
+
+// The theme's reset flattens <sup>; restore it (used in "Gow's 300<sup>th</sup>").
+sup {
+  font-size: .6em;
+  line-height: 0;
+  vertical-align: super;
+}
