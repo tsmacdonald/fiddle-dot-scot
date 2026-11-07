@@ -21,6 +21,12 @@ markdown: kramdown
 
 sass:
   style: compressed
+  # The theme's partials share globals via @import and use lighten()/darken(),
+  # so they can't move to @use without forking the theme. Silence until it's updated.
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
 
 exclude:
 - LICENSE.md
