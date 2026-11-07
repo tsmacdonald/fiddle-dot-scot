@@ -190,3 +190,30 @@ sup {
   line-height: 0;
   vertical-align: super;
 }
+
+// Left-align section headings (the theme centres them). The masthead subtitle stays centred with the rest of the masthead.
+h2,
+h3 {
+  text-align: left;
+}
+
+h2.divided::after {
+  margin-left: 0;
+}
+
+.site-masthead h2 {
+  text-align: center;
+}
+
+// Tables opted in with kramdown's `{: .ruled}` get lines between cells (e.g. the gow-300 schedule).
+table.ruled {
+  th, td {
+    border: 1px solid $muted-text-color;
+    padding: .25em .75em;
+  }
+}
+
+// The theme's reset strips the browser's default bold from table headers; restore it.
+th {
+  font-weight: bold;
+}
