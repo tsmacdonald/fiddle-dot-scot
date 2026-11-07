@@ -2,7 +2,7 @@
 layout: post
 title: "'Foreign Sonnets Bear the Gree': Music and Cultural Identity in Scottish Enlightenment Society"
 description: What did the Acts of Union mean for the Scots language and Scottish music?
-image: assets/images/elphinston.png
+image: /assets/images/elphinston.png
 ---
 
 [Here's a link](/assets/foreign-sonnets.pdf) to a paper I

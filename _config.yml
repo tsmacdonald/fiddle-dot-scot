@@ -4,6 +4,7 @@ email: tim@tsmacdonald.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fiddle.scot" # the base hostname & protocol for your site
 author: "Tim Macdonald"
+locale: en_GB
 formspree: xwkykgll
 goatcounter: fiddle-scot
 
@@ -11,6 +12,7 @@ theme: hitchens-theme
 
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # The blog's table of contents lives at /blog/ (blog/index.html)
 paginate: 10

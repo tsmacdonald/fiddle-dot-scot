@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Other Online Resources
-image: assets/images/bremner-treatise.jpg
+image: /assets/images/bremner-treatise.jpg
 permalink: /online-resources/
 ---
 
