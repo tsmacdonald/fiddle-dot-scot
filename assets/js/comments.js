@@ -53,8 +53,13 @@
     e.preventDefault();
     var button = form.querySelector('button');
     button.disabled = true;
+    var data = new URLSearchParams(new FormData(form));
+    // ponytail: shared-secret spam check, validated by Google (required, regex "strathspey"). Kept out of the
+    // HTML so bots that copy the form's fields miss it. Bots that run JS or read the Google form can still pass;
+    // upgrade path is Cloudflare Turnstile verified by an Apps Script on-submit trigger.
+    data.append('entry.1421010366', 'strathspey');
     // Google Forms sends no CORS headers, so the response is opaque; a network failure is the only error we can see.
-    fetch(form.action, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(form)) })
+    fetch(form.action, { method: 'POST', mode: 'no-cors', body: data })
       .then(function () {
         form.reset();
         status.textContent = 'Thank you! Your comment will appear once it has been approved.';

@@ -1,6 +1,7 @@
 {%- comment -%}
   Comments are a Google Form feeding a Google Sheet. Approved rows are published (CSV)
-  and rendered by assets/js/comments.js. Without JavaScript the form still posts to Google.
+  and rendered by assets/js/comments.js, which also adds the form's required spam-check answer,
+  so posting needs JavaScript.
 {%- endcomment -%}
 <section id="comments" class="comments"
          data-csv="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSLF5PAccREsQ23vhDnhWvcaJDMKxFDH6oVB6llR3LSTJ89YoJtMHuLeKYb_apiYbnzDlrfzDyaZTJ/pub?gid=2070403445&single=true&output=csv"
