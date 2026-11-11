@@ -163,6 +163,12 @@ body,
   white-space: pre-line;
 }
 
+// Honeypot field: moved off-screen rather than display:none, which bots tend to skip.
+.comment-trap {
+  position: absolute;
+  left: -9999px;
+}
+
 .post .comment-note,
 .post .comment-status {
   color: $muted-text-color;

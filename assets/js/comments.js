@@ -58,8 +58,11 @@
     // HTML so bots that copy the form's fields miss it. Bots that run JS or read the Google form can still pass;
     // upgrade path is Cloudflare Turnstile verified by an Apps Script on-submit trigger.
     data.append('entry.1421010366', 'strathspey');
+    // Honeypot: people can't see the "website" field; a bot that fills every input gets the thank-you but nothing is sent.
+    var trapped = data.get('website');
+    data.delete('website');
     // Google Forms sends no CORS headers, so the response is opaque; a network failure is the only error we can see.
-    fetch(form.action, { method: 'POST', mode: 'no-cors', body: data })
+    (trapped ? Promise.resolve() : fetch(form.action, { method: 'POST', mode: 'no-cors', body: data }))
       .then(function () {
         form.reset();
         status.textContent = 'Thank you! Your comment will appear once it has been approved.';
