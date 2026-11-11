@@ -7,6 +7,7 @@ author: "Tim Macdonald"
 locale: en_GB
 formspree: xwkykgll
 goatcounter: fiddle-scot
+hide_credits: true
 
 theme: hitchens-theme
 
